@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+input[type=text] 
+  {
+    width: 90px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 12px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 5px; 
+    background-repeat: no-repeat;
+    padding: 5px 5px 5px 5px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+  
+  }
+
+input[type=text]:focus 
+  {
+    width: 30%;
+  }
+
+body 
+  {
+    font-family: "Audiowide", sans-serif ;
+    margin: 0;
+  }
+
+/* Style the header */
+.header 
+  {
+    padding: 80px;
+    color: #FF8E2B;
+    text-shadow: 1px 2px #0D2137;
+    text-align: left;
+    background-image: url("imags/car.hom.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  
+  
+  }
+
+
+
+/*here 100 10 80
+/* Increase the font size of the h1 element */
+.header h1 
+  {
+    font-size: 70px;
+  }
+
+/* Style the top navigation bar */
+.navbar 
+  {
+    overflow: hidden;
+    background-color: #0D2137;
+    position: fixed;
+    top:0;
+    width: 100%;
+  }
+
+/* Style the navigation bar links */
+.navbar a 
+  {
+    float: left;
+    display: block;
+    color: #e0eaf5;
+    text-align: center;
+    padding: 12px 15px;
+    text-decoration: none;
+  }
+
+  /*this is thia*/
+.numm a
+   {
+    float: left;
+    display: block;
+    color: #FF8E2B;
+    text-align: center;
+    padding: 12px 15px;
+    text-decoration: none;
+  }
+
+/* Right-aligned link */
+.navbar a.right 
+  {
+    float: right;
+  }
+
+/* Change color on hover */
+.navbar a:hover 
+  {
+    background-color: #ddd;
+    color: black;
+  }
+/*this is thia*/
+.block 
+  {
+     
+    text-align: center;
+    margin-left: 20%;margin-right: 20%;
+    padding: 20px,10px; border-radius: 10px;
+    font-size: 25px;
+    animation: changeColor 9s linear infinite;
+    font-family: "Lucida Console, Courier New, monospace"
+    
+  }
+
+
+@keyframes changeColor {
+            0%, 100% {
+                background-color: #FF8E2B;
+
+            }
+            25% {
+                background-color: rgb(234, 76, 76);
+            }
+            50% {
+                background-color: #b46d33;
+            }
+            75% {
+                background-color: pink;
+            }
+        }
+         
+/* .card 
+  {
+    box-shadow: 0 4px 8px 0 rgba(41, 38, 38, 0.2);
+    transition: 0.3s;
+    width: 40%;
+  } */
+
+/* .card:hover 
+  {
+    width: 45%;
+    box-shadow: 0 8px 16px 0 rgba(16, 15, 15, 0.2);
+  } */
+
+  
+/*this is intro*/
+h2.intro1
+{
+  text-align:center;
+  margin-left:5%;
+  margin-top:-25%
+  
+}
+p.intro2
+{
+  text-align: left;
+  margin-left: 40%;
+  margin-top: 1%;
+  margin-right: 10%;
+  font-family: Garamond, serif;
+}
+a.intro3
+{
+  text-align: left;
+  margin-left: 41%;
+  margin-top: 2%;
+  margin-bottom: 4%;
+  background-color: #ddd;
+  border: none;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 16px;
+}
+a.intro3:hover 
+{
+  background-color: #FF8E2B;
+}
+
+/*this is service list*/
+h1.top
+  {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 50px;
+    margin-left: 2%;
+    font-style: bold;
+    text-decoration-line: underline;
+    text-decoration-color: #FF8E2B;
+    text-align: center;
+  }
+h2.Services1
+  {
+    margin-left:30%;
+    margin-top: -4%;
+    font-family:'Trebuchet MS', sans-serif;
+  }
+
+h2.Services2
+  {
+    margin-left:63%;
+    margin-top: -6.5%;
+    font-family:'Trebuchet MS', sans-serif;
+  }
+
+h2.Services3
+  {
+    margin-left:30%;
+    margin-top: -4%;
+    font-family:'Trebuchet MS', sans-serif;
+  }
+h2.Services4
+  {
+    margin-left:63%;
+    margin-top: -6.5%;
+    font-family:'Trebuchet MS', sans-serif;
+  }
+h2.Services5
+  {
+    margin-left:30%;
+    margin-top: -4%;
+    font-family:'Trebuchet MS', sans-serif;
+  }
+h2.Services6
+  {
+    margin-left:63%;
+    margin-top: -6.5%;
+    font-family:'Trebuchet MS', sans-serif;
+  }
+h2.Services7
+  {
+    margin-left:30%;
+    margin-top: -4%;
+    font-family:'Trebuchet MS', sans-serif;
+  }
+h2.Services8
+  {
+    margin-left:63%;
+    margin-top: -6.5%;
+    font-family:'Trebuchet MS', sans-serif;
+  }
+h2.Services9
+  {
+    margin-left:30%;
+    margin-top: -4%;
+    font-family:'Trebuchet MS', sans-serif;
+  }
+h2.Services10
+  {
+    margin-left:63%;
+    margin-top: -6%;
+    font-family:'Trebuchet MS', sans-serif;
+  }
+h2.h2
+  {
+  font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+  font-size: 50px;
+    margin-left: 2%;
+    font-style: bold;
+    text-decoration-line: underline;
+    text-decoration-color: #FF8E2B;
+    text-align: center;
+  
+  
+  }
+h2.t2
+{
+  font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+  font-size: 50px;
+    margin-left: 2%;
+    font-style: bold;
+    text-decoration-line: underline;
+    text-decoration-color: #FF8E2B;
+    text-align: center;
+}
+.timeline
+
+  {
+  width: 220px;
+  height: 200px;
+  background-color: #FF8E2B;
+  color: rgb(11, 11, 11);
+  margin-left: 10%;
+  margin-bottom: 5%;
+  animation: mymove 3s infinite;
+  font-size: smaller;
+  
+  }
+
+@keyframes mymove
+ {
+  50% {box-shadow: 10px 20px 30px black;}
+  }
+
+  .timeline2
+
+  {
+  width: 200px;
+  height: 200px;
+  background-color: #FF8E2B;
+  color: rgb(6, 5, 5);
+  margin-left: 120%;
+  margin-bottom: 0%;
+  margin-top: -90%;
+  animation: mymove 3s infinite;
+  }
+
+@keyframes mymove
+ {
+  50% {box-shadow: 10px 20px 30px black;}
+  }
+
+  .timeline3
+
+  {
+  width: 200px;
+  height: 200px;
+  background-color: #FF8E2B;
+  color: rgb(6, 5, 5);
+  margin-left: 230%;
+  margin-bottom:0%;
+  margin-top: -99.9%;
+  animation: mymove 3s infinite;
+  }
+
+@keyframes mymove
+ {
+  50% {box-shadow: 10px 20px 30px black;}
+  }
+
+  .timeline4
+
+  {
+  width: 200px;
+  height: 200px;
+  background-color: #FF8E2B;
+  color: rgb(6, 5, 5);
+  margin-left: 345%;
+  margin-bottom:0%;
+  margin-top: -99.9%;
+  animation: mymove 3s infinite;
+  }
+
+@keyframes mymove
+ {
+  50% {box-shadow: 10px 20px 30px black;}
+  }
+
+.rew
+  {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* Float four columns side by side */
+  .column {
+    float: left;
+    width: 25%;
+    padding: 0 5px;
+  }
+  
+  .row {margin: 0 -5px;}
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive columns */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 10px;
+    }
+  }
+  
+  /* Style the counter cards */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #444;
+    color: rgb(239, 227, 177);
+  }
+  
+  .fa {
+    font-size:20px;
+    padding: 10px;
+    justify-content: left;
+  }
+.cust
+
+  {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  background: #f39a4d;
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: rgb(44, 81, 141);
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+    text-align: center;
+    padding: 20px;
+    background: #1f3a57;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #c38b09;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+  background-color: #f1b33f;
+}
+
+/* Add an italic font style to all quotes */
+q {font-style: italic;}
+
+/* Add a blue color to the author */
+.author {color: rgb(252, 80, 45);}
+
+
+.footer
+{
+  
+    box-sizing: border-box;
+  
+  
+  /* Create four equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+    height: 200px; /* Should be removed. Only for demonstration */
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+   
+  }
+}
+
+</style>
+</head>
+
+<!-- ---------- -->
+
+<body>
+       
+<div class="header">
+  <h1 >TechTune Motors</h1>
+  <h2 >Your car's best mate.<h2>
+  <form>
+    <input type="text" name="search" placeholder="Search..">
+  </form>
+</div>
+<!-- ---------- -->
+<div>
+<div class="navbar">
+  <a href="#">Home</a>
+  <a href="C:\Users\vsnsh\Desktop\internship\website\apt.html">Appointment</a>
+  <a href="C:\Users\vsnsh\Desktop\internship\website\sevice and review\templates\a.html">Services</a>
+  <a href="about.html">About</a>
+  <a href="Contact.html">Contact</a>
+  <a href="C:\Users\vsnsh\Desktop\internship\website\madhu\marketplace.html">Market Place</a>
+  <a href="faq.html">FaQ</a>
+  <a href="C:\Users\vsnsh\Desktop\internship\website\sevice and review\templates\b.html">Reviews</a>
+
+
+  
+ <a href="simple-login-page-in-html\loginsignup.html" class="right">Login</a>
+ 
+
+
+<div class="numm">
+  <a href="#" class="right">+2222222</a>
+</div></div>
+  <!-- ---------- -->
+<div>
+  <h1 class="block" >Why Choose TechTune?</h1> 
+</div>
+<div>
+
+
+ <img src="imags\main1.png" alt="TechTune" style="width:300px;height:300px;margin-left: 10%;margin-top: -1%;border-radius: 100px;"> 
+ <div>
+ <h2 class="intro1">Welcom to TechTune!</h2>
+ <p class="intro2">"At TechTune, we hold a profound dedication to the care and servicing of your automobile. Our commitment extends beyond the ordinary, as we consistently strive to exceed expectations and provide a superior level of excellence in automotive maintenance and repair. We take great pride in our unwavering pursuit of delivering the highest quality of service, ensuring that your vehicle receives the utmost attention and expertise it deserves."</p>
+ <a href= "#" class="intro3">About Us!</a>
+ <!-- <video class="card" autoplay loop muted src="imags\v1.mp4" alt="we are here" style= "width:400px;height:300px;margin-left: 10%;margin-top: -0.1%;"></video> -->
+</div></div>
+<!-- ---------- -->
+<div> <div>
+  <h1 class="top" >OUR SERVICES</h1>
+</div>
+<div >
+  <div class="s1" >
+    <img src="imags\cc.png" alt="car" style="width:7%;height:7% ; margin-left: 20%;margin-top: 2%;">
+      <h2 class="Services1">Periodic Maintenance</h2>
+  </div>
+  <div class="s2">
+    <img src="imags\10742679.png" alt="car" style="width:9%;height:9% ; margin-left: 55%;  width: 6%; height: 7%;margin-top: -20%;margin-bottom: 3%;">
+      <h2 class="Services2">Battery Checkup</h2>
+  </div>
+  <div>
+    <img src="imags\car-service.png" alt="car" style="width:7%;height:7% ; margin-left: 20%;margin-top: 2%;">
+    <h2 class="Services3">Detailing & Car Spa</h2>
+  </div>
+  <div>
+    <img src="imags\checklist.png" alt="car" style="width:9%;height:9% ; margin-left: 55%;  width: 6%; height: 7%;margin-top: -20%;margin-bottom: 3%;">
+    <h2 class="Services4">Check-ups</h2>
+  </div>
+  <div>
+    <img src="imags\spray-gun.png" alt="car" style="width:7%;height:7% ; margin-left: 20%;margin-top: 2%;">
+    <h2 class="Services5">Body & Paint Works</h2>
+  </div>
+  <div>
+    <img src="imags\vehicle.png" alt="car" style="width:9%;height:9% ; margin-left: 55%;  width: 6%; height: 7%;margin-top: -20%;margin-bottom: 3%;">
+      <h2 class="Services6">Tyers and wheel Care</h2>
+  </div>
+  <div>
+    <img src="imags\spare-parts.png" alt="car" style="width:7%;height:7% ; margin-left: 20%;margin-top: 2%;">
+      <h2 class="Services7">DIY Accessories</h2>
+  </div>
+<div>
+  <img src="imags\maintenance.png" alt="car" style="width:9%;height:9% ; margin-left: 55%;  width: 6%; height: 7%;margin-top: -20%;margin-bottom: 3%;">
+      <h2 class="Services8">General Repairs</h2>
+</div>
+<div>
+  <img src="imags\car-repair (1).png" alt="car" style="width:7%;height:7% ; margin-left: 20%;margin-top: 2%;">
+      <h2 class="Services9">Repair</h2>
+</div>
+<div>
+  <img src="imags\engine-oil.png" alt="car" style="width:9%;height:9% ; margin-left: 55%;  width: 6%; height: 7%;margin-top: -20%;margin-bottom: 3%;">
+      <h2 class="Services10">Oil and Greasing</h2>
+</div>
+</div>
+</div>
+<div>
+  <h2 class="t2">HOW TechTune WORKS?</h2>
+  </div>
+  
+  <div class="timeline">
+    <div>
+    <div id="myDIV1">
+      <h1 class="myDIV1" style="margin-left:4%">Select the best Car Service</h1>
+      <p style="margin-left:4%">Select the ideal car service to ensure a comfortable and reliable transportation experience.</p>
+    </div>
+  </div>
+  <div class="timeline2">
+    
+    <div id="myDIV1">
+      <h1 class="myDIV1" style="margin-left:4%">Schedule Date and Time</h1>
+      <p style="margin-left:4%">Specify your preferred date and time.</p>
+    </div>
+  </div>
+
+  <div class="timeline3">
+    
+    <div id="myDIV1">
+      <h1 class="myDIV1" style="margin-left:4%">Repair & Test</h1>
+      <p style="margin-left:5%">Repair the designated subject and conduct a thorough testing process to ensure its reliability and functionality.</p>
+    </div>
+  </div>
+
+    
+  <div class="timeline4">
+    
+    <div id="myDIV1">
+      <h1 class="myDIV1" style="margin-left:4%">Payment</h1>
+      <p style="margin-left:5%">Make your payment at the store.</p>
+    </div>
+  </div>
+
+</div>
+<div class="rew">
+  <div class="row">
+    <div class="column">
+      <div class="card">
+        
+        <h3><i class="fa fa-user"></i>1.5 million+</h3>
+        <p>Car Services</p>
+      </div>
+    </div>
+  
+    <div class="column">
+      <div class="card">
+        <h3><i class="fa fa-check"></i>1 millio+</h3>
+        <p>Happy Customers</p>
+      </div>
+    </div>
+    
+    <div class="column">
+      <div class="card">
+        <h3><i class="fa fa-smile-o"></i>4.5</h3>
+        <p>Average Rating</p>
+      </div>
+    </div>
+    
+    <div class="column">
+      <div class="card">
+        <h3><i class="fa fa-coffee"></i>100+</h3>
+        <p>Workers</p>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+
+<div class="cust">
+
+  <div class="slideshow-container">
+
+    <div class="mySlides">
+      <q>Techtune is hands down the best car workshop I've ever encountered! They provide exceptional service, from their skilled mechanics to their friendly staff. My car has never run smoother, and I appreciate their honesty and fair pricing. I won't trust my car with anyone else.</q>
+      <p class="author">- John Keats</p>
+    </div>
+    
+    <div class="mySlides">
+      <q>I've been a loyal customer of Techtune for years, and they continue to impress me with their professionalism and expertise. They have a solution for every car issue, and they go the extra mile to ensure customer satisfaction. Highly recommended for all your car repair and maintenance needs!</q>
+      <p class="author">- Ernest Hemingway</p>
+    </div>
+    
+    <div class="mySlides">
+      <q>Techtune is a game-changer in the car repair industry. I brought in my car with a persistent issue that other shops couldn't fix. Techtune's technicians diagnosed the problem quickly and efficiently, and my car is running like new. Their commitment to quality and customer service is outstanding.</q>
+      <p class="author">- Thomas A. Edison</p>
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+    
+    </div>
+    
+    <div class="dot-container">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+    </div>
+    
+    <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+
+</div>
+<br>
+
+<div class="footer">
+  
+<div class="row">
+  <div class="column" style="background-color:#dfab70;">
+
+
+    <h2 style="margin-left: 3%;">TechTune</h2>
+    
+    <p style="font-size: smaller;margin-top:2% ;margin-left: 3%;" >#161,5th phase, Sachidananda Nagar, Rajarajeshwari Nagar, Bengaluru, Karnataka 560098</p>
+  </div>
+
+
+  <div class="column" style="background-color:#dfab70;">
+   <p> <a href="index.html" style="color:black ;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;text-decoration: none;">Home</a></p>
+   <p>  <a href="C:\Users\vsnsh\Desktop\internship\website\apt.html" style="color:black ;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;text-decoration: none;">Appointment</a></p>
+   <p> <a href="C:\Users\vsnsh\Desktop\internship\website\sevice and review\templates\a.html" style="color:black ;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;text-decoration: none;">Services</a></p>
+   <p> <a href="#" style="color:black ;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;text-decoration: none;">About</a></p>
+   </div>
+
+
+
+  <div class="column" style="background-color:#dfab70;">
+    <p> <a href="Contact.html" style="color:black ;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;text-decoration: none;">Contact</a></p>
+    <p> <a href="C:\Users\vsnsh\Desktop\internship\website\madhu\marketplace.html" style="color:black ;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;text-decoration: none;">Market Place</a></p>
+    <p>  <a href="faq.html" style="color:black ;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;text-decoration: none;">FaQ</a></p>
+    <p>  <a href="C:\Users\vsnsh\Desktop\internship\website\sevice and review\templates\b.html" style="color:black ;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;text-decoration: none;">Reviews</a></p>
+  </div>
+
+
+
+  <div class="column" style="background-color:#dfab70;">
+    <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Monday to Sunday- </p>
+    <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">9am-1:3-pm to 2:30pm - 7:30pm</p>
+    <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;" >Contact us at</p>
+    <P>
+      <a href="#" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+        xyz@mail
+      </a>
+    </P>
+    <P>
+      <a href="#" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+        +222222
+      </a>
+    </P>
+  </div>
+</div>
+
+
+</div>
+
+</body>
+</html>

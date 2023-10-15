@@ -1,0 +1,78 @@
+.container {
+    max-width:100%;
+    margin:  auto;
+    padding: 20px;
+    background-color: #2E77AE;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+ 
+}
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #2E77AE;
+            
+        }
+       
+        h1 {
+            text-align: center;
+            color: #0D2137;
+        }
+        .slot {
+                  display: inline-block;
+                    margin: 10px;
+                    padding: 10px;
+                    border: 1px solid #ccc;
+                    cursor: pointer;
+            }
+
+         .slot:hover {
+                background-color: #E0EAF5;
+            }
+
+        label {
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            color: #0D2137;
+        }
+        input[type="date"],
+        textarea {
+            width: 20%;
+            padding: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            color: #0D2137;
+        }
+        label[id="message"],
+        textarea {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            color: #0D2137;
+        }
+        button {
+            background-color: #FF8E2B;
+            color: #0D2137;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width:100%;
+            font-size:large;
+            
+            
+            
+        }
+       
+    
